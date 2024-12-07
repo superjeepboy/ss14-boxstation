@@ -46,6 +46,9 @@
         {
             "name": "atmos_co2"
         },
+		{
+            "name": "atmos_h2o"
+        },		
         {
             "name": "atmos_n2"
         },
