@@ -449,7 +449,7 @@
     Sigh:
       collection: MaleSigh
     Scream:
-      collection: MaleScreams
+      collection: VulpkaninScreams
     Growl:
       collection: VulpkaninGrowls
     Snarl:
@@ -477,7 +477,7 @@
     Sigh:
       collection: FemaleSigh
     Scream:
-      collection: FemaleScreams
+      collection: VulpkaninScreams
     Growl:
       collection: VulpkaninGrowls
     Snarl:
