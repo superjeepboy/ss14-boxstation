@@ -112,10 +112,11 @@
       - HumanoidSilicon # DeltaV
     fuelCost: 15
     damage:
+      groups:
+        Brute: -15 # 5 for each, like a bruise pack
       types:
-        Blunt: -15
-        Piercing: -15
-        Slash: -15
+        Cold: -1 # Structural Repair
+        Caustic: -1 # Structural Repair
     bleedingModifier: -20 # DeltaV - IPCs bleed
 # Harmony Change Ends
 
