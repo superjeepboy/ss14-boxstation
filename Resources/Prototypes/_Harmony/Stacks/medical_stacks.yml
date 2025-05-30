@@ -4,3 +4,17 @@
   icon: { sprite: "/Textures/_DV/Objects/Medical/Oilpack.rsi", state: icon }
   spawn: IPCOilPack
   maxCount: 10
+
+- type: stack
+  id: CablePack
+  name: stack-cable-pack
+  icon: { sprite: "/Textures/_Harmony/Objects/Medical/cable_pack.rsi", state: cable_pack }
+  spawn: CablePack
+  maxCount: 10
+
+- type: stack
+  id: ComponentPack
+  name: stack-component-pack
+  icon: { sprite: "", state: icon }
+  spawn: ComponentPack
+  maxCount: 10

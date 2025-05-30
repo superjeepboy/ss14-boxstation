@@ -23,3 +23,77 @@
     count: 10
   - type: StackPrice
     price: 10
+
+- type: entity
+  parent: IPCOilPack
+  id: IPCOilPack1
+  suffix: Single
+  components:
+  - type: Stack
+    count: 1
+
+- type: entity
+  parent: BaseHealingItem
+  id: CablePack
+  name: robot rewiring kit
+  suffix: Full
+  description: a bundle of cables capable of replacing any burnt out wiring inside an ipc.
+  components:
+  - type: Sprite
+    sprite: _Harmony/Objects/Medical/cable_pack.rsi
+    state: cable_pack
+  - type: Item
+    sprite: _Harmony/Objects/Medical/cable_pack.rsi
+    heldPrefix: cable_pack
+  - type: Healing
+    damageContainers:
+    - HumanoidSilicon
+    damage:
+      types:
+        Heat: -5
+        Shock: -5
+  - type: Stack
+    stackType: CablePack
+    count: 10
+
+- type: entity
+  parent: CablePack
+  id: CablePack1
+  suffix: Single
+  components:
+  - type: Stack
+    count: 1
+
+- type: entity
+  parent: BaseHealingItem
+  id: ComponentPack
+  name: component replacement kit
+  suffix: Full
+  description: a set of spare components to repair damage caused by radiaton and electrocution on ipcs.
+  components:
+  - type: Sprite
+    sprite: _Harmony/Objects/Medical/componentpack.rsi
+    state: icon
+  - type: Item
+    sprite: _Harmony/Objects/Medical/componentpack.rsi
+    heldPrefix: icon
+  - type: Healing
+    damageContainers:
+    - HumanoidSilicon
+    damage:
+      types:
+        Shock: -1
+        Radiation: -5
+  - type: Stack
+    stackType: ComponentPack
+    count: 10
+  - type: StackPrice
+    price: 10
+
+- type: entity
+  parent: ComponentPack
+  id: ComponentPack1
+  suffix: Single
+  components:
+  - type: Stack
+    count: 1

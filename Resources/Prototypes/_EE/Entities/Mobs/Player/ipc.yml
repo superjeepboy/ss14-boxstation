@@ -112,7 +112,7 @@
 - type: entity
   save: false
   name: Urist McPositronic
-  suffix: UR1ST
+  suffix: UR1ST # Harmony Change
   parent: MobHumanDummy
   id: MobIPCDummy
   categories: [ HideSpawnMenu ] # Goobstation
