@@ -18,6 +18,7 @@ using Robust.Shared.Prototypes;
 // Harmony refs
 using Robust.Shared.Configuration;
 using Content.Shared._Harmony.CCVars;
+using Content.Shared._EE.Silicon.Components; // For IPCs
 
 namespace Content.Server.Chat;
 
@@ -179,7 +180,12 @@ public sealed class SuicideSystem : EntitySystem
             return;
         }
 
-        args.DamageType ??= "Bloodloss";
+        // Start Harmony Change, for IPCS
+        if (HasComp<SiliconComponent>(victim)) // Goobstation
+            args.DamageType ??= "Shock";
+        else
+            args.DamageType ??= "Bloodloss";
+        // End Harmony Change
         _suicide.ApplyLethalDamage(victim, args.DamageType);
         args.Handled = true;
     }
