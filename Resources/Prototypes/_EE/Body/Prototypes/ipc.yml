@@ -17,7 +17,7 @@
       - right leg
       - left leg
       organs:
-        posbrain: PositronicBrain
+        brain: IPCProcessorHousing
         pump: OrganIPCPump
     right arm:
       part: RightArmIPC

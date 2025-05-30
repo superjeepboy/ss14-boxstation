@@ -14,14 +14,14 @@
     solutions:
       organ:
         reagents:
-        - ReagentId: Oil
+        - ReagentId: IPCOil
           Quantity: 10
 
 # Harmony Change, Give IPCs a regular brain
 - type: entity
   id: IPCProcessorHousing
   parent: [BaseItem, OrganHumanBrain]
-  name: sentient slime core
+  name: ipc processor housing
   description: "Contains either an Advanced Positronic Brain, or an Advanced MMI, you're not quite sure."
   components:
     - type: Sprite
@@ -43,8 +43,8 @@
       - state: eyeball-l
       - state: eyeball-r
   - type: Organ
-    slotId: eyes
-  - type: Eyes
+    # slotId: eyes # Harmony Change, comments this out because I'm pretty sure its Shitmed
+  # - type: Eyes # Harmony Change, comments this out because I'm pretty sure its Shitmed
 
 - type: entity
   id: OrganIPCTongue
@@ -70,13 +70,13 @@
   id: OrganIPCPump
   parent: BaseIPCOrgan
   name: micro pump
-  description: "A micro pump, used to circulate coolant."
+  description: "A micro pump, used to circulate coolant and lubricant."
   components:
   - type: Sprite
     state: heart-on
   - type: Organ
-    slotId: pump
-  - type: Heart
+    # slotId: pump # Harmony Change, comments this out because I'm pretty sure its Shitmed
+  # - type: Heart # Harmony Change, comments this out because I'm pretty sure its Shitmed
   # The following was already commented out on DeltaV
   # The heart 'metabolizes' medicines and poisons that aren't filtered out by other organs.
   # This is done because these chemicals need to have some effect even if they aren't being filtered out of your body.

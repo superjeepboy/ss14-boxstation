@@ -28,7 +28,6 @@ public sealed class BatteryDrinkerSystem : EntitySystem
     [Dependency] private readonly PopupSystem _popup = default!;
     [Dependency] private readonly PowerCellSystem _powerCell = default!;
     [Dependency] private readonly SharedContainerSystem _container = default!;
-    [Dependency] private readonly ChargerSystem _chargers = default!; // DeltaV - people with augment power cells can drink batteries
 
     public override void Initialize()
     {
@@ -46,8 +45,7 @@ public sealed class BatteryDrinkerSystem : EntitySystem
 
         if (!TryComp<BatteryDrinkerComponent>(args.User, out var drinkerComp) ||
             !TestDrinkableBattery(uid, drinkerComp) ||
-            // DeltaV - people with augment power cells can drink batteries
-            !_chargers.SearchForBattery(args.User, out _, out _))
+            !_silicon.TryGetSiliconBattery(args.User, out var drinkerBattery))
             return;
 
         AlternativeVerb verb = new()
@@ -99,12 +97,20 @@ public sealed class BatteryDrinkerSystem : EntitySystem
         var drinker = uid;
         var sourceBattery = Comp<BatteryComponent>(source);
 
-        // DeltaV - people with augment power cells can drink batteries
-        if (!_chargers.SearchForBattery(drinker, out var drinkerBattery, out var drinkerBatteryComponent))
+        _silicon.TryGetSiliconBattery(drinker, out var drinkerBatteryComponent);
+
+        if (!TryComp(uid, out PowerCellSlotComponent? batterySlot))
             return;
 
-        // DeltaV - people with augment power cells can drink batteries
+        var container = _container.GetContainer(uid, batterySlot.CellSlotId);
+        var drinkerBattery = container.ContainedEntities.First();
+
         TryComp<BatteryDrinkerSourceComponent>(source, out var sourceComp);
+
+        DebugTools.AssertNotNull(drinkerBattery);
+
+        if (drinkerBattery == null)
+            return;
 
         var amountToDrink = drinkerComp.DrinkMultiplier * 1000;
 
@@ -121,10 +127,10 @@ public sealed class BatteryDrinkerSystem : EntitySystem
         }
 
         if (_battery.TryUseCharge(source, amountToDrink))
-            _battery.SetCharge(drinkerBattery.Value, drinkerBatteryComponent.CurrentCharge + amountToDrink, drinkerBatteryComponent); // DeltaV - people with augment power cells can drink batteries
+            _battery.SetCharge(drinkerBattery, drinkerBatteryComponent.CurrentCharge + amountToDrink, drinkerBatteryComponent);
         else
         {
-            _battery.SetCharge(drinkerBattery.Value, sourceBattery.CurrentCharge + drinkerBatteryComponent.CurrentCharge, drinkerBatteryComponent); // DeltaV - people with augment power cells can drink batteries
+            _battery.SetCharge(drinkerBattery, sourceBattery.CurrentCharge + drinkerBatteryComponent.CurrentCharge, drinkerBatteryComponent);
             _battery.SetCharge(source, 0);
         }
 

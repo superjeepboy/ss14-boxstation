@@ -317,12 +317,14 @@
     - type: LightningTarget
       priority: 1
       lightningExplode: false
-    - type: ComplexInteraction
-    - type: FootPrints
-    - type: Carriable
-    - type: Targeting
+    # Harmony Change Start, pretty sure this is all DeltaV systems we don't have
+    # - type: ComplexInteraction
+    # - type: FootPrints # Harmony Change, we don't have footprins
+    # - type: Carriable
+    # - type: Targeting
     # - type: SurgeryTarget # Harmony Change, Comments out Shitmed
-    - type: LayingDown
+    # - type: LayingDown
     # - type: Fiber # DeltaV - IPCs leave fibers instead of prints # Harmony Change, IPCs will use basic forensics
       # fiberMaterial: fibers-steel # Harmony Change, IPCs will use basic forensics
     # - type: Anesthesia # DeltaV - IPCs can be operated on without anesthesia # Harmony Change, Comments out Shitmed
+    # Harmony Change End

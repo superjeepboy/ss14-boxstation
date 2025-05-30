@@ -103,10 +103,12 @@
     state: "head_m"
   - type: BodyPart
     partType: Head
-    organs:
-      eyes:
-        id: "eyes"
-    vital: true
+    # Harmony Change Start, comments this out because I'm pretty sure its Shitmed
+    # organs:
+      # eyes:
+        # id: "eyes"
+    # vital: true
+    # End Harmony Change
   - type: Input
     context: "ghost"
   - type: MovementSpeedModifier
@@ -133,10 +135,12 @@
   - type: BodyPart
     partType: Arm
     symmetry: Left
-    children:
-      left hand:
-        id: "left hand"
-        type: Hand
+    # Harmony Change Start, comments this out because I'm pretty sure its Shitmed
+    # children:
+      # left hand:
+        # id: "left hand"
+        # type: Hand
+    # End Harmony Change
 
 - type: entity
   id: RightArmIPC
@@ -153,10 +157,12 @@
   - type: BodyPart
     partType: Arm
     symmetry: Right
-    children:
-      right hand:
-        id: "right hand"
-        type: Hand
+    # Harmony Change Start, comments this out because I'm pretty sure its Shitmed
+    # children:
+      # right hand:
+        # id: "right hand"
+        # type: Hand
+    # End Harmony Change
 
 - type: entity
   id: LeftHandIPC
@@ -205,10 +211,12 @@
   - type: BodyPart
     partType: Leg
     symmetry: Left
-    children:
-      left foot:
-        id: "left foot"
-        type: Foot
+    # Harmony Change Start, comments this out because I'm pretty sure its Shitmed
+    # children:
+      # left foot:
+        # id: "left foot"
+        # type: Foot
+    # End Harmony Change
   - type: MovementBodyPart
 
 - type: entity
@@ -226,10 +234,12 @@
   - type: BodyPart
     partType: Leg
     symmetry: Right
-    children:
-      right foot:
-        id: "right foot"
-        type: Foot
+    # Harmony Change Start, comments this out because I'm pretty sure its Shitmed
+    # children:
+      # right foot:
+        # id: "right foot"
+        # type: Foot
+    # Harmony Change End
   - type: MovementBodyPart
 
 - type: entity
