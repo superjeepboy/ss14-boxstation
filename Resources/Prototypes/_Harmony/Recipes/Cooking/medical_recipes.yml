@@ -1,0 +1,8 @@
+- type: microwaveMealRecipe
+  id: RecipeIPCOilPack
+  result: IPCOilPack
+  time: 10
+  group: Medicinal
+  reagents:
+    IndustrialLubricant: 20
+    ComputerCoolant: 20

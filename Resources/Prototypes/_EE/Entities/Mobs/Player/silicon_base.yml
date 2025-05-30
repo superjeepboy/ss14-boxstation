@@ -157,8 +157,8 @@
       bounds: -0.5,-0.5,0.5,0.5
     - type: Bloodstream # begin DeltaV - uncommented
       damageBleedModifiers: BloodlossIPC
-      bloodReagent: Oil
-      # bloodReagent: IPCOil # Harmony Change, gives IPCs a unique Blood
+      # bloodReagent: Oil
+      bloodReagent: IPCOil # Harmony Change, gives IPCs a unique Blood
       bleedReductionAmount: 0
       bloodMaxVolume: 100
       chemicalMaxVolume: 0
@@ -313,7 +313,7 @@
         # - PsionicallyInsulated
         - Flashed # Goobstation
     - type: Blindable
-    - type: Fingerprint
+    - type: Fingerprint # Harmony Change, Gives IPCs fingerprints
     - type: FireVisuals
       alternateState: Standing
     - type: LightningTarget

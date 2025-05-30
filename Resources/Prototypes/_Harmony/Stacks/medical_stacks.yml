@@ -1,0 +1,6 @@
+- type: stack
+  id: IPCOilPack
+  name: stack-ipc-oil-pack
+  icon: { sprite: "/Textures/_DV/Objects/Medical/Oilpack.rsi", state: icon }
+  spawn: IPCOilPack
+  maxCount: 10

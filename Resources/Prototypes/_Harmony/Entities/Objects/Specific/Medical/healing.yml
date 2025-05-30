@@ -1,0 +1,25 @@
+- type: entity
+  parent: BaseHealingItem
+  id: IPCOilPack
+  name: ipc oil pack
+  suffix: Full
+  description: Utilising a proprietary double-nozzle connector, IPCs can now recover all their missing fluids in one easy package.
+  components:
+  - type: Sprite
+    sprite: _DV/Objects/Medical/Oilpack.rsi
+    state: icon
+  - type: Item
+    sprite: _DV/Objects/Medical/Oilpack.rsi
+    heldPrefix: icon
+  - type: Healing
+    damageContainers:
+    - HumanoidSilicon
+    damage:
+      types:
+        Heat: -0.5 # if this isn't here it doesn't work... might as well make it meaningful
+    ModifyBloodLevel: 10 # restores a lot of blood for IPCs.
+  - type: Stack
+    stackType: IPCOilPack
+    count: 10
+  - type: StackPrice
+    price: 10

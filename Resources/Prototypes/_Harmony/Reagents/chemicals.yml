@@ -1,0 +1,47 @@
+- type: reagent
+  id: IndustrialLubricant
+  name: reagent-name-oil
+  group: Chemicals
+  desc: reagent-desc-oil
+  physicalDesc: reagent-physical-desc-oily
+  slipData:
+    requiredSlipSpeed: 3.5
+  flavor: bitter
+  flavorMinimum: 0.01
+  color: "#7A8C63"
+  recognizable: true
+  boilingPoint: -84.7 # Acetylene. Close enough.
+  meltingPoint: -80.7
+  friction: 0.4
+
+- type: reagent
+  id: ComputerCoolant
+  name: reagent-name-oil
+  group: Chemicals
+  desc: reagent-desc-oil
+  physicalDesc: reagent-physical-desc-oily
+  slipData:
+    requiredSlipSpeed: 3.5
+  flavor: bitter
+  flavorMinimum: 0.01
+  color: "#D9EAFB"
+  recognizable: true
+  boilingPoint: -84.7 # Acetylene. Close enough.
+  meltingPoint: -80.7
+  friction: 0.4
+
+- type: reagent
+  id: EthyleneGlycol
+  name: reagent-name-oil
+  group: Chemicals
+  desc: reagent-desc-oil
+  physicalDesc: reagent-physical-desc-oily
+  slipData:
+    requiredSlipSpeed: 3.5
+  flavor: bitter
+  flavorMinimum: 0.01
+  color: "#F2F8FE"
+  recognizable: true
+  boilingPoint: -84.7 # Acetylene. Close enough.
+  meltingPoint: -80.7
+  friction: 0.4
