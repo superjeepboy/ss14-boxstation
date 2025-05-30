@@ -88,12 +88,12 @@
       thresholds:
         0: Alive
         165: Dead
-    - type: Destructible
-      thresholds:
-        - trigger: !type:DamageTrigger
-            damage: 500
-          behaviors:
-            - !type:GibBehavior {}
+    # - type: Destructible
+      # thresholds:
+        # - trigger: !type:DamageTrigger
+            # damage: 500
+          # behaviors:
+            # - !type:GibBehavior {}
     - type: Icon
       sprite: _Harmony/Mobs/Species/IPC/parts.rsi
       state: full
@@ -157,8 +157,8 @@
       bounds: -0.5,-0.5,0.5,0.5
     - type: Bloodstream # begin DeltaV - uncommented
       damageBleedModifiers: BloodlossIPC
-      # bloodReagent: Oil
-      bloodReagent: IPCOil # Harmony Change, gives IPCs a unique Blood
+      bloodReagent: Oil
+      # bloodReagent: IPCOil # Harmony Change, gives IPCs a unique Blood
       bleedReductionAmount: 0
       bloodMaxVolume: 100
       chemicalMaxVolume: 0
@@ -169,7 +169,7 @@
       bloodlossDamage:
         types:
           Blunt: 0.1 # lubricant is running low
-          # Heat: 0.1 # Harmony Change, Overheating from no coolant
+          Heat: 0.1 # Harmony Change, Overheating from no coolant
       bloodlossHealDamage:
         types:
           Burn: 0 # end DeltaV
@@ -205,7 +205,7 @@
         - SiliconEmotes # DeltaV
     - type: Hands
     - type: Inventory
-      templateId: human
+      templateId: IPC
     - type: InventorySlots
     - type: Appearance
     - type: GenericVisualizer
@@ -318,8 +318,8 @@
     - type: LightningTarget
       priority: 1
       lightningExplode: false
+    - type: ComplexInteraction
     # Harmony Change Start, pretty sure this is all DeltaV systems we don't have
-    # - type: ComplexInteraction
     # - type: FootPrints # Harmony Change, we don't have footprins
     # - type: Carriable
     # - type: Targeting

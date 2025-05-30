@@ -71,7 +71,7 @@
       slotTexture: glasses
       slotFlags: EYES
       stripTime: 3
-      uiWindowPos: 0,0
+      uiWindowPos: 0,3
       strippingWindowPos: 0,0
       displayName: Eyes
 # Harmony Change Start, Re-enables ear slot so IPCs wear headsets to compensate for removal of intrinsic radio
@@ -79,7 +79,7 @@
       slotTexture: ears
       slotFlags: EARS
       stripTime: 3
-      uiWindowPos: 2,0
+      uiWindowPos: 2,2
       strippingWindowPos: 2,0
       displayName: Ears
 # Harmony Change End
