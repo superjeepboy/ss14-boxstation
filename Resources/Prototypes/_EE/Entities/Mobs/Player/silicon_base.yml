@@ -184,7 +184,8 @@
     - type: Barotrauma # Not particularly modifiable. In the future, some response to pressure changes would be nice.
       damage:
         types:
-          Blunt: 0.28 #per second, scales with pressure and other constants.
+          # Blunt: 0.28 #per second, scales with pressure and other constants.
+          Blunt: 0.5 # Harmony Change
     # Harmony Change Ends
     - type: Identity
     #  soundHit:

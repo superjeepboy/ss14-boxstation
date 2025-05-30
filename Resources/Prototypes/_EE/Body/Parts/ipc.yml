@@ -5,7 +5,7 @@
   abstract: true
   components:
   - type: Damageable
-    damageContainer: Inorganic # Shitmed Change
+    damageContainer: HumanoidSilicon # Shitmed Change
   - type: BodyPart
   - type: Gibbable
   - type: ContainerContainer
@@ -17,20 +17,20 @@
 #      path: /Audio/_Harmony/Medical/Surgery/organ1.ogg
 #    endSound:
 #      path: /Audio/_Harmony/Medical/Surgery/organ2.ogg
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTypeTrigger
-        damageType: Blunt
-        damage: 110
-      behaviors:
-      - !type:GibPartBehavior { }
-    - trigger:
-        !type:DamageTypeTrigger
-        damageType: Slash
-        damage: 150
-      behaviors:
-      - !type:GibPartBehavior { }
+  # - type: Destructible
+    # thresholds:
+    # - trigger:
+        # !type:DamageTypeTrigger
+        # damageType: Blunt
+        # damage: 110
+      # behaviors:
+      # - !type:GibPartBehavior { }
+    # - trigger:
+        # !type:DamageTypeTrigger
+        # damageType: Slash
+        # damage: 150
+      # behaviors:
+      # - !type:GibPartBehavior { }
   - type: StaticPrice
     price: 100
 
@@ -70,24 +70,25 @@
         # id: "posbrain"
       # pump:
         # id: "pump"
-    # End Harmony Change
-  - type: ContainerContainer
-    containers:
-      torso_slot: !type:ContainerSlot {}
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTypeTrigger
-        damageType: Blunt
-        damage: 400
-      behaviors:
-      - !type:GibPartBehavior { }
-    - trigger:
-        !type:DamageTypeTrigger
-        damageType: Slash
-        damage: 400
-      behaviors:
-      - !type:GibPartBehavior { }
+  # - type: ContainerContainer
+    # containers:
+      # bodypart: !type:Container
+        # ents: []
+  # - type: Destructible
+    # thresholds:
+    # - trigger:
+        # !type:DamageTypeTrigger
+        # damageType: Blunt
+        # damage: 400
+      # behaviors:
+      # - !type:GibPartBehavior { }
+    # - trigger:
+        # !type:DamageTypeTrigger
+        # damageType: Slash
+        # damage: 400
+      # behaviors:
+      # - !type:GibPartBehavior { }
+# End Harmony Change
 
 - type: entity
   id: HeadIPC

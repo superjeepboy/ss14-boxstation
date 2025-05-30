@@ -9,37 +9,38 @@
       - torso
       organs:
         eyes: OrganIPCEyes
+        brain: IPCProcessorHousing
     torso:
       part: TorsoIPC
       connections:
-      - right arm
-      - left arm
-      - right leg
-      - left leg
+      - right_arm
+      - left_arm
+      - right_leg
+      - left_leg
       organs:
-        brain: IPCProcessorHousing
-        pump: OrganIPCPump
-    right arm:
+        # brain: IPCProcessorHousing # Harmony Change
+        heart: OrganIPCPump # Harmony Change
+    right_arm:
       part: RightArmIPC
       connections:
-      - right hand
-    left arm:
+      - right_hand
+    left_arm:
       part: LeftArmIPC
       connections:
-      - left hand
-    right hand:
+      - left_hand
+    right_hand:
       part: RightHandIPC
-    left hand:
+    left_hand:
       part: LeftHandIPC
-    right leg:
+    right_leg:
       part: RightLegIPC
       connections:
-      - right foot
-    left leg:
+      - right_foot
+    left_leg:
       part: LeftLegIPC
       connections:
-      - left foot
-    right foot:
+      - left_foot
+    right_foot:
       part: RightFootIPC
-    left foot:
+    left_foot:
       part: LeftFootIPC
