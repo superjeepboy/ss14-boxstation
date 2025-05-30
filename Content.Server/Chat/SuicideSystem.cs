@@ -18,6 +18,7 @@ using Robust.Shared.Prototypes;
 // Harmony refs
 using Robust.Shared.Configuration;
 using Content.Shared._Harmony.CCVars;
+using Content.Shared._EE.Silicon.Components; // EE
 
 namespace Content.Server.Chat;
 
@@ -179,7 +180,10 @@ public sealed class SuicideSystem : EntitySystem
             return;
         }
 
-        args.DamageType ??= "Bloodloss";
+        if (HasComp<SiliconComponent>(victim)) // Goobstation
+            args.DamageType ??= "Shock";
+        else
+            args.DamageType ??= "Bloodloss";
         _suicide.ApplyLethalDamage(victim, args.DamageType);
         args.Handled = true;
     }
