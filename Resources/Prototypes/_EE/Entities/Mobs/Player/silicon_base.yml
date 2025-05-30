@@ -313,6 +313,7 @@
         # - PsionicallyInsulated
         - Flashed # Goobstation
     - type: Blindable
+    - type: Fingerprint
     - type: FireVisuals
       alternateState: Standing
     - type: LightningTarget
