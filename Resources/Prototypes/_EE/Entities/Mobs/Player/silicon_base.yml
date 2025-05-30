@@ -304,7 +304,7 @@
         - Electrocution
         # - Drunk
         - SlurredSpeech
-        - PressureImmunity
+        # - PressureImmunity # Harmony Change
         - Muted
         # - ForcedSleep
         - TemporaryBlindness
