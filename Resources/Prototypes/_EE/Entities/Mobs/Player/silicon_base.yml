@@ -66,7 +66,7 @@
       # heatDamageThreshold: 1800 # GoobStation: Roughly the melting point of mild steels
       heatDamageThreshold: 373.15 # Harmony Change, damage point of electronics
       # coldDamageThreshold: 100 # DeltaV - has to be very cold
-      coldDamageThreshold: 173.15 # Harmony Change, freezing point of structural elements, like plastics
+      coldDamageThreshold: 200 # Harmony Change, takes into account freezing point of structural elements, like plastics, and the freezing point of internal chemicals
       currentTemperature: 310.15
       specificHeat: 42
       coldDamage:
@@ -75,6 +75,7 @@
       heatDamage:
         types:
           Heat: 2 # DeltaV - was 3
+          Shock: 1 # Harmony Change, Represents Components overheating with electrical issues resulting
       atmosTemperatureTransferEfficiency: 0.05
     # - type: KillOnOverheat # GoobStation # Harmony Change, comments this out
     - type: Deathgasp
@@ -186,6 +187,7 @@
         types:
           # Blunt: 0.28 #per second, scales with pressure and other constants.
           Blunt: 0.5 # Harmony Change
+          Heat: 0.1 # Harmony Change, represents internal fluids, like coolant and lubricant, boiling away
     # Harmony Change Ends
     - type: Identity
     #  soundHit:
