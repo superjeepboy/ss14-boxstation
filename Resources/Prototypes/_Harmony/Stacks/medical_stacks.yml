@@ -27,6 +27,13 @@
   maxCount: 10
 
 - type: stack
+  id: ChassisPatch
+  name: stack-chassis-patch
+  icon: { sprite: "/Textures/_Harmony/Objects/Medical/chassis_patch.rsi", state: icon }
+  spawn: ChassisPatch
+  maxCount: 10
+
+- type: stack
   id: ReplacementLenses
   name: stack-replacement-lenses
   icon: { sprite: "/Textures/_Harmony/Objects/Medical/replacement_lenses.rsi", state: icon }

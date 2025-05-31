@@ -168,6 +168,9 @@
   - type: Item
     sprite: _Harmony/Objects/Medical/chassis_patch.rsi
     heldPrefix: icon
+  - type: Construction
+    graph: ChassisPatch
+    node: icon
   - type: Healing
     damageContainers:
       - HumanoidSilicon
