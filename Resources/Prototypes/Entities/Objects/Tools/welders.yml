@@ -117,7 +117,8 @@
       types:
         Cold: -1 # Structural Repair
         Caustic: -1 # Structural Repair
-    bleedingModifier: -20 # DeltaV - IPCs bleed
+    # bleedingModifier: -20 # DeltaV - IPCs bleed
+    bleedingModifier: -10 # Parity with Gauze
 # Harmony Change Ends
 
 - type: entity
