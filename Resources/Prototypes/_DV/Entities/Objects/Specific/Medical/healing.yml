@@ -14,7 +14,7 @@
   - type: Healing
     damageContainers:
     - HumanoidSilicon
-    - Silicon
+    # - Silicon # Harmony Change, as long as Borgs are immune to Radiation, trying to remove radiation damage from them crashes the game
     damage:
       groups:
         Burn: -60 # 25 per type
