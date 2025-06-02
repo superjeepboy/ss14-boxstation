@@ -181,7 +181,7 @@ public sealed class SuicideSystem : EntitySystem
         }
 
         if (HasComp<SiliconComponent>(victim)) // Goobstation
-            args.DamageType ??= "Shock";
+            args.DamageType ??= "Slash"; // Harmony Change, made it slash to prevent testfail and to make self-execution more thematic
         else
             args.DamageType ??= "Bloodloss";
         _suicide.ApplyLethalDamage(victim, args.DamageType);
