@@ -5,7 +5,7 @@
   components:
   - type: Sprite
     netsync: false
-    sprite: _Harmony/Mobs/Species/IPC/organs.rsi
+    sprite: _DV/Mobs/Species/IPC/organs.rsi
   - type: Organ
   # - type: Food
   # - type: Extractable

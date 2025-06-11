@@ -96,7 +96,7 @@
           # behaviors:
             # - !type:GibBehavior {}
     - type: Icon
-      sprite: _Harmony/Mobs/Species/IPC/parts.rsi
+      sprite: _DV/Mobs/Species/IPC/parts.rsi
       state: full
     - type: Sprite
       noRot: true
@@ -244,6 +244,9 @@
     - type: CanEscapeInventory
     - type: HumanoidAppearance
       species: IPC
+      hideLayersOnEquip: # Harmony Change, Better headgear meshing with markings
+      - Snout
+      - HeadTop
     - type: Body
       prototype: IPC
       requiredLegs: 2

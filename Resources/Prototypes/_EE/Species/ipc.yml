@@ -31,7 +31,11 @@
     HeadTop: MobHumanoidAnyMarking
     HeadSide: MobHumanoidAnyMarking
     Tail: MobHumanoidAnyMarking
-    Hair: MobHumanoidMarkingMatchSkin
+    # Begin DeltaV Additions - Adds new layer types for markings-sake
+    Eyes: MobHumanoidAnyMarking
+    Hair: MobHumanoidAnyMarking
+    Snout: MobHumanoidAnyMarking # Harmony Change
+    # End DeltaV Additions
     Chest: MobIPCTorso
     LArm: MobIPCLArm
     RArm: MobIPCRArm
@@ -46,11 +50,15 @@
   id: MobIPCMarkingLimits
   points:
     Hair:
-      points: 0
+      points: 1 # DeltaV - Fixes hair not displaying
       required: false
     FacialHair:
-      points: 0
+      points: 1 # DeltaV - Fixes hair not displaying
       required: false
+    Eyes: # DeltaV - Moves screen to the eyes layer
+      points: 1
+      required: true
+      defaultMarkings: [ MobIPCEyesDefault ]
     Head:
       points: 1
       required: true
@@ -67,6 +75,9 @@
       points: 4
       required: true
       defaultMarkings: [ MobIPCLArmDefault, MobIPCLHandDefault, MobIPCRArmDefault, MobIPCRHandDefault ]
+    Snout: # DeltaV - Adds ability to use more marking types
+        points: 1
+        required: false
     HeadSide:
       points: 1
       required: false
@@ -96,7 +107,7 @@
   markingCategory: Head
   speciesRestriction: [IPC]
   sprites:
-  - sprite: _Harmony/Mobs/Species/IPC/parts.rsi
+  - sprite: _DV/Mobs/Species/IPC/parts.rsi
     state: head_m
 
 # Torso
@@ -116,7 +127,7 @@
   markingCategory: Chest
   speciesRestriction: [IPC]
   sprites:
-  - sprite: _Harmony/Mobs/Species/IPC/parts.rsi
+  - sprite: _DV/Mobs/Species/IPC/parts.rsi
     state: torso_m
 
 - type: marking
@@ -125,7 +136,7 @@
   markingCategory: Chest
   speciesRestriction: [IPC]
   sprites:
-  - sprite: _Harmony/Mobs/Species/IPC/parts.rsi
+  - sprite: _DV/Mobs/Species/IPC/parts.rsi
     state: torso_f
 
 # Left Leg
@@ -139,7 +150,7 @@
   markingCategory: Legs
   speciesRestriction: [IPC]
   sprites:
-  - sprite: _Harmony/Mobs/Species/IPC/parts.rsi
+  - sprite: _DV/Mobs/Species/IPC/parts.rsi
     state: l_leg
 
 # Left Arm
@@ -153,7 +164,7 @@
   markingCategory: Arms
   speciesRestriction: [IPC]
   sprites:
-  - sprite: _Harmony/Mobs/Species/IPC/parts.rsi
+  - sprite: _DV/Mobs/Species/IPC/parts.rsi
     state: l_arm
 
 #LHand
@@ -167,7 +178,7 @@
   markingCategory: Arms
   speciesRestriction: [IPC]
   sprites:
-  - sprite: _Harmony/Mobs/Species/IPC/parts.rsi
+  - sprite: _DV/Mobs/Species/IPC/parts.rsi
     state: l_hand
 
 #LFoot
@@ -181,7 +192,7 @@
   markingCategory: Legs
   speciesRestriction: [IPC]
   sprites:
-  - sprite: _Harmony/Mobs/Species/IPC/parts.rsi
+  - sprite: _DV/Mobs/Species/IPC/parts.rsi
     state: l_foot
 
 #RLeg
@@ -195,7 +206,7 @@
   markingCategory: Legs
   speciesRestriction: [IPC]
   sprites:
-  - sprite: _Harmony/Mobs/Species/IPC/parts.rsi
+  - sprite: _DV/Mobs/Species/IPC/parts.rsi
     state: r_leg
 
 #RArm
@@ -209,7 +220,7 @@
   markingCategory: Arms
   speciesRestriction: [IPC]
   sprites:
-  - sprite: _Harmony/Mobs/Species/IPC/parts.rsi
+  - sprite: _DV/Mobs/Species/IPC/parts.rsi
     state: r_arm
 
 #RHand
@@ -223,7 +234,7 @@
   markingCategory: Arms
   speciesRestriction: [IPC]
   sprites:
-  - sprite: _Harmony/Mobs/Species/IPC/parts.rsi
+  - sprite: _DV/Mobs/Species/IPC/parts.rsi
     state: r_hand
 
 #RFoot
@@ -237,7 +248,7 @@
   markingCategory: Legs
   speciesRestriction: [IPC]
   sprites:
-  - sprite: _Harmony/Mobs/Species/IPC/parts.rsi
+  - sprite: _DV/Mobs/Species/IPC/parts.rsi
     state: r_foot
 
 - type: Tag
