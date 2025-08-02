@@ -284,7 +284,7 @@
   graph: GasPipeSensor
   startNode: start
   targetNode: sensorAlt1
-  category: construction-category-structures
+  category: construction-category-atmos # imp
   placementMode: AlignAtmosPipeLayers
   objectType: Structure
   canRotate: true
@@ -299,7 +299,7 @@
   graph: GasPipeSensor
   startNode: start
   targetNode: sensorAlt2
-  category: construction-category-structures
+  category: construction-category-atmos # imp
   placementMode: AlignAtmosPipeLayers
   objectType: Structure
   canRotate: true
@@ -534,10 +534,16 @@
   startNode: start
   targetNode: ventpump
   category: construction-category-atmos # imp
-  placementMode: SnapgridCenter
+  placementMode: AlignAtmosPipeLayers # imp
   canBuildInImpassable: false
   conditions:
   - !type:NoUnstackableInTile
+  # imp edit start
+  alternativePrototypes:
+  - GasVentPump
+  - GasVentPumpAlt1
+  - GasVentPumpAlt2
+  # imp edit end
 
 - type: construction
   id: GasPassiveVent
@@ -545,10 +551,16 @@
   startNode: start
   targetNode: passivevent
   category: construction-category-atmos # imp
-  placementMode: SnapgridCenter
+  placementMode: AlignAtmosPipeLayers # imp
   canBuildInImpassable: false
   conditions:
   - !type:NoUnstackableInTile
+  # imp edit start
+  alternativePrototypes:
+  - GasPassiveVent
+  - GasPassiveVentAlt1
+  - GasPassiveVentAlt2
+  # imp edit end
 
 - type: construction
   id: GasVentScrubber
@@ -556,10 +568,16 @@
   startNode: start
   targetNode: ventscrubber
   category: construction-category-atmos # imp
-  placementMode: SnapgridCenter
+  placementMode: AlignAtmosPipeLayers # imp
   canBuildInImpassable: false
   conditions:
   - !type:NoUnstackableInTile
+  # imp edit start
+  alternativePrototypes:
+  - GasVentScrubber
+  - GasVentScrubberAlt1
+  - GasVentScrubberAlt2
+  # imp edit end
 
 - type: construction
   id: GasOutletInjector
@@ -567,10 +585,16 @@
   startNode: start
   targetNode: outletinjector
   category: construction-category-atmos # imp
-  placementMode: SnapgridCenter
+  placementMode: AlignAtmosPipeLayers # imp
   canBuildInImpassable: false
   conditions:
   - !type:NoUnstackableInTile
+  # imp edit start
+  alternativePrototypes:
+  - GasOutletInjector
+  - GasOutletInjectorAlt1
+  - GasOutletInjectorAlt2
+  # imp edit end
 
 # ATMOS BINARY
 - type: construction
@@ -594,7 +618,7 @@
   graph: GasBinary
   startNode: start
   targetNode: pressurepumpAlt1
-  category: construction-category-utilities
+  category: construction-category-atmos # imp
   placementMode: AlignAtmosPipeLayers
   canBuildInImpassable: false
   conditions:
@@ -610,7 +634,7 @@
   graph: GasBinary
   startNode: start
   targetNode: pressurepumpAlt2
-  category: construction-category-utilities
+  category: construction-category-atmos # imp
   placementMode: AlignAtmosPipeLayers
   canBuildInImpassable: false
   conditions:
@@ -641,7 +665,7 @@
   graph: GasBinary
   startNode: start
   targetNode: volumepumpAlt1
-  category: construction-category-utilities
+  category: construction-category-atmos # imp
   placementMode: AlignAtmosPipeLayers
   canBuildInImpassable: false
   conditions:
@@ -657,7 +681,7 @@
   graph: GasBinary
   startNode: start
   targetNode: volumepumpAlt2
-  category: construction-category-utilities
+  category: construction-category-atmos # imp
   placementMode: AlignAtmosPipeLayers
   canBuildInImpassable: false
   conditions:
@@ -688,7 +712,7 @@
   graph: GasBinary
   startNode: start
   targetNode: passivegateAlt1
-  category: construction-category-utilities
+  category: construction-category-atmos # imp
   placementMode: AlignAtmosPipeLayers
   canBuildInImpassable: false
   conditions:
@@ -704,7 +728,7 @@
   graph: GasBinary
   startNode: start
   targetNode: passivegateAlt2
-  category: construction-category-utilities
+  category: construction-category-atmos # imp
   placementMode: AlignAtmosPipeLayers
   canBuildInImpassable: false
   conditions:
@@ -782,7 +806,7 @@
   graph: GasBinary
   startNode: start
   targetNode: valveAlt1
-  category: construction-category-utilities
+  category: construction-category-atmos # imp
   placementMode: AlignAtmosPipeLayers
   canBuildInImpassable: false
   conditions:
@@ -798,7 +822,7 @@
   graph: GasBinary
   startNode: start
   targetNode: valveAlt2
-  category: construction-category-utilities
+  category: construction-category-atmos # imp
   placementMode: AlignAtmosPipeLayers
   canBuildInImpassable: false
   conditions:
@@ -828,7 +852,7 @@
   graph: GasBinary
   startNode: start
   targetNode: signalvalveAlt1
-  category: construction-category-utilities
+  category: construction-category-atmos # imp
   placementMode: AlignAtmosPipeLayers
   canBuildInImpassable: false
   conditions:
@@ -843,7 +867,7 @@
   graph: GasBinary
   startNode: start
   targetNode: signalvalveAlt2
-  category: construction-category-utilities
+  category: construction-category-atmos # imp
   placementMode: AlignAtmosPipeLayers
   canBuildInImpassable: false
   conditions:
@@ -879,8 +903,14 @@
   startNode: start
   targetNode: radiator
   category: construction-category-atmos # imp
-  placementMode: SnapgridCenter
+  placementMode: AlignAtmosPipeLayers # imp
   canBuildInImpassable: false
+  # imp edit start
+  alternativePrototypes:
+  - HeatExchanger
+  - HeatExchangerAlt1
+  - HeatExchangerAlt2
+  # imp edit end
 
 - type: construction
   id: HeatExchangerBend
@@ -889,8 +919,14 @@
   startNode: start
   targetNode: bendradiator
   category: construction-category-atmos # imp
-  placementMode: SnapgridCenter
+  placementMode: AlignAtmosPipeLayers # imp
   canBuildInImpassable: false
+  # imp edit start
+  alternativePrototypes:
+  - HeatExchangerBend
+  - HeatExchangerBendAlt1
+  - HeatExchangerBendAlt2
+  # imp edit end
 
 # ATMOS TRINARY
 - type: construction
