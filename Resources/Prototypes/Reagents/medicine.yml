@@ -871,15 +871,15 @@
           max: 30
         damage:
           groups:
-            Toxin: -3 # Harmony - Revert Advanced Chem Change
-            Brute: 0.5 # Harmony - Revert Advanced Chem Change
+            Toxin: -3 # Harmony - -1.5 > -3 - Revert Advanced Chem Change
+            Brute: 0.5 # Harmony - 0.25 > 0.5 - Revert Advanced Chem Change
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
           min: 30
         damage:
           groups:
-            Toxin: -1 # Harmony - Revert Advanced Chem Change
+            Toxin: -1 # Harmony - -0.5 > -1 - Revert Advanced Chem Change
             Brute: 3
       - !type:AdjustReagent
         conditions:
@@ -994,14 +994,14 @@
       - !type:HealthChange
         damage:
           types:
-            Caustic: -3 # Harmony - Revert Advanced Chem Change
+            Caustic: -3 # Harmony - -0.6 > -3 - Revert Advanced Chem Change
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
-          min: 16 # Harmony - Revert Advanced Chem Change
+          min: 16 # Harmony - 21 > 16 - Revert Advanced Chem Change
         damage:
           types:
-            Heat: 2 # Harmony - Revert Advanced Chem Change
+            Heat: 2 # Harmony - 0.2 > 2 - Revert Advanced Chem Change
       - !type:Jitter
         conditions:
         - !type:ReagentThreshold
@@ -1050,14 +1050,14 @@
       - !type:HealthChange
         damage:
           types:
-            Slash: -3 # Harmony - Revert Advanced Chem Change
+            Slash: -3 # Harmony - -0.6 > -3 - Revert Advanced Chem Change
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
-          min: 12 # Harmony - Revert Advanced Chem Change
+          min: 12 # Harmony - 21 > 12 - Revert Advanced Chem Change
         damage:
           types:
-            Cold: 3 # Harmony - Revert Advanced Chem Change
+            Cold: 3 # Harmony - 1.5 > 3 - Revert Advanced Chem Change
 
 - type: reagent
   id: Puncturase
@@ -1074,15 +1074,15 @@
       - !type:HealthChange
         damage:
           types:
-            Piercing: -4 # Harmony - Revert Advanced Chem Change
-            Blunt: 0.1 # Harmony - Revert Advanced Chem Change
+            Piercing: -4 # Harmony - -0.6 > -4 - Revert Advanced Chem Change
+            Blunt: 0.1 # Harmony - 0.05 > 0.1 - Revert Advanced Chem Change
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
-          min: 11 # Harmony - Revert Advanced Chem Change
+          min: 11 # Harmony - 21 > 11 - Revert Advanced Chem Change
         damage:
           types:
-            Blunt: 5 # Harmony - Revert Advanced Chem Change
+            Blunt: 5 # Harmony - 1 > 5 - Revert Advanced Chem Change
 
 - type: reagent
   id: Bruizine
@@ -1099,14 +1099,14 @@
       - !type:HealthChange
         damage:
           types:
-            Blunt: -3.5 # Harmony - Revert Advanced Chem Change
+            Blunt: -3.5 # Harmony - -0.6 > -3.5 - Revert Advanced Chem Change
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
-          min: 10.5 # Harmony - Revert Advanced Chem Change
+          min: 10.5 # Harmony - 19 > 10.5 - Revert Advanced Chem Change
         damage:
           types:
-            Poison: 4 # Harmony - Revert Advanced Chem Change
+            Poison: 4 # Harmony - 1.5 > 4 - Revert Advanced Chem Change
 
 - type: reagent
   id: Holywater
@@ -1207,7 +1207,7 @@
       - !type:HealthChange
         damage:
           types:
-            Shock: -4 # Harmony - Revert Advanced Chem Change
+            Shock: -4 # Harmony - 0.5 > 4 - Revert Advanced Chem Change
       - !type:AdjustReagent
         reagent: Licoxide
         amount: -4
@@ -1221,14 +1221,14 @@
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
-          min: 12 # Harmony - Revert Advanced Chem Change
+          min: 12 # Harmony - 15.5 > 12 - Revert Advanced Chem Change
         damage:
           types:
-            Cold: 2 # Harmony - Revert Advanced Chem Change
+            Cold: 2 # Harmony - 0.2 > 2 - Revert Advanced Chem Change
       - !type:AdjustTemperature
         conditions:
         - !type:ReagentThreshold
-          min: 12 # Harmony - Revert Advanced Chem Change
+          min: 12 # Harmony - 15.5 > 12 - Revert Advanced Chem Change
         amount: -30000
       - !type:Jitter
         conditions:
