@@ -142,10 +142,10 @@
   metabolisms:
     Medicine:
       effects:
-      - !type:HealthChange
+      - !type:HealthChange # Harmony Change - EvenHealthChange > HealthChange - Reverts advanced chem rework
         damage:
-          groups:
-            Brute: -2
+          groups: # Harmony Change - needed for EvenHealthChange > HealthChange
+            Brute: -2 # Harmony Change - -1.5 > -2 - Reverts advanced chem rework
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
