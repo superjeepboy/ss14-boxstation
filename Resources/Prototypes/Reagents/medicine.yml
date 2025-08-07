@@ -144,8 +144,10 @@
       effects:
       - !type:HealthChange # Harmony Change - EvenHealthChange > HealthChange - Reverts advanced chem rework
         damage:
-          groups: # Harmony Change - needed for EvenHealthChange > HealthChange
-            Brute: -2 # Harmony Change - -1.5 > -2 - Reverts advanced chem rework
+# Start Harmony change - Reverts advanced chem rework
+          groups: 
+            Brute: -2 # -1.5 > -2
+# End Harmony change
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
