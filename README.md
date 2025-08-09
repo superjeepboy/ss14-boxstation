@@ -1,14 +1,14 @@
 <div class="header" align="center">
-<img alt="Harmony Station" src="https://raw.githubusercontent.com/ss14-harmony/ss14-harmony/refs/heads/master/Resources/Textures/Logo/logo.png">
+<img alt="BoxStation" src="https://raw.githubusercontent.com/superjeepboy/ss14-boxstation/refs/heads/master/Resources/Textures/Logo/logo.png">
 </div>
 
-Harmony is a fork of [Space Station 14](https://github.com/space-wizards/space-station-14). We aim to stay as close to vanilla SS14 as possible, while adding cosmetic changes that make Harmony our home, and features that enable MRP (medium roleplay) playstyle.
+BoxStation is a fork of [Space Station 14](https://github.com/space-wizards/space-station-14), pulling content directly from [Harmony](https://github.com/ss14-harmony/ss14-harmony).
 
 Space Station 14 is a remake of SS13 that runs on [Robust Toolbox](https://github.com/space-wizards/RobustToolbox), a homegrown engine written in C#.
 
 ## Links
 
-[Harmony Wiki](http://wiki.harmony14.com/) | [Website (SS14)](https://spacestation14.io/) | [Steam (SS14)](https://store.steampowered.com/app/1255460/Space_Station_14/) | [Standalone Download (SS14)](https://spacestation14.io/about/nightlies/) | [Builds (Harmony)](http://cdn.harmony14.com/fork/harmony/)
+[Harmony Wiki](http://wiki.harmony14.com/) | [Website (SS14)](https://spacestation14.io/) | [Steam (SS14)](https://store.steampowered.com/app/1255460/Space_Station_14/) | [Standalone Download (SS14)](https://spacestation14.io/about/nightlies/)
 
 ## Documentation/Wiki
 
@@ -21,9 +21,9 @@ It also has lots of resources for new contributors to the project.
 
 ## Contributing
 
-We are happy to accept contributions from anybody. Get in Discord if you want to help and don't be afraid to ask for help either.
+We are happy to accept contributions from anybody.
 
-Make sure to read our contributing guidelines in [CONTRIBUTING.md](/CONTRIBUTING.md) if you are new to Harmony!
+Contributing guidelines follow the same as Harmony. [CONTRIBUTING.md](/CONTRIBUTING.md)
 
 ## Building
 
