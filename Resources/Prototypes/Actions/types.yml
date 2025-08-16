@@ -404,6 +404,7 @@
     iconOn: { sprite: Mobs/Customization/Vulpkanin/tail_markings.rsi, state: tail-wag-icon }
     itemIconStyle: NoItem
     useDelay: 1 # Prevents Emote Spam
+    checkCanInteract: false
 
 - type: entity
   parent: BaseAction
