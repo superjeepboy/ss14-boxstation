@@ -15,8 +15,9 @@
   - Fingerprint
   - NpcFactionMember
   # traits
-  # - LegsParalyzed (you get healed)
   - BlackAndWhiteOverlay
+  - Clumsy
+  # - LegsParalyzed (you get healed)
   - LightweightDrunk
   - Muted
   - Narcolepsy
@@ -27,14 +28,6 @@
   - Snoring
   - Unrevivable
   - Uncloneable # Harmony
-  # job specific
-  - BibleUser
-  - CommandStaff
-  - Clumsy
-  - MindShield
-  - MimePowers
-  - SpaceNinja
-  - Thieving
   # accents
   - Accentless
   - BackwardsAccent
@@ -74,12 +67,23 @@
   # Hamrony addons end
   blacklist:
     components:
-    - AttachedClothing # helmets, which are part of the suit
-    - HumanoidAppearance # will cause problems for downstream felinids getting cloned as Urists
-    - Implanter # they will spawn full again, but you already get the implant. And we can't do item slot copying yet
-    - VirtualItem
+      - AttachedClothing # helmets, which are part of the suit
+      - HumanoidAppearance # will cause problems for downstream felinids getting cloned as Urists
+      - Implanter # they will spawn full again, but you already get the implant. And we can't do item slot copying yet
+      - VirtualItem
 
-# all antagonist roles
+# for job-specific traits etc.
+- type: cloningSettings
+  id: Special
+  components:
+  - BibleUser
+  - CommandStaff
+  - MindShield
+  - MimePowers
+  - SpaceNinja
+  - Thieving
+
+# antag roles
 - type: cloningSettings
   id: Antag
   parent: BaseClone
@@ -91,14 +95,18 @@
 # for cloning pods
 - type: cloningSettings
   id: CloningPod
-  parent: Antag
+  parent: [BaseClone, Antag]
   forceCloning: false
   copyEquipment: null
   copyInternalStorage: false
   copyImplants: false
 
-# spawner
+# for paradox clones
+- type: cloningSettings
+  id: ParadoxCloningSettings
+  parent: [BaseClone, Antag]
 
+# spawner
 - type: entity
   id: RandomCloneSpawner
   name: Random Clone
