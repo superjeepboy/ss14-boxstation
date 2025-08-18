@@ -7,9 +7,9 @@
       path: /Audio/_RMC14/Voice/Rodentia/mouse_squeak.ogg
 
 - type: emoteSounds
-  parent: [RMCUnisexRodentia, RMCMaleHuman]
+  parent: [RMCUnisexRodentia, MaleHuman] # BoxStation change, changed from custom RMC entity.
   id: RMCMaleRodentia
 
 - type: emoteSounds
-  parent: [RMCUnisexRodentia, RMCFemaleHuman]
+  parent: [RMCUnisexRodentia, FemaleHuman] # BoxStation change, changed from custom RMC entity.
   id: RMCFemaleRodentia
