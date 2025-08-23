@@ -214,3 +214,4 @@
   - type: Contraband
     severity: GrandTheft
     allowedDepartments: [ Command ]
+    allowedJobs: [ Warden ] # Box Change - Warden has a steal objective (EShotgun)
