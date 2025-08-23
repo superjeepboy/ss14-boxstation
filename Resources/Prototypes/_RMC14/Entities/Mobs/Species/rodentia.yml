@@ -1,7 +1,7 @@
 - type: entity
   save: false
   name: Urist McRat
-  parent: BaseMobSpecies # BoxStation change, changed from RMC custom entity
+  parent: BaseMobSpeciesOrganic # BoxStation change, changed from RMC custom entity # Hotfix: Change parent to the organic version. Hopefully fixes things. Rodentia might need a refactor.
   id: CMMobRodentia
   suffix: RMC14
   components:
