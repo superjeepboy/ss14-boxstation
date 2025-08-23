@@ -18,7 +18,8 @@
     - Human
     - Moth
     - Reptilian
-    - Vulpkanin
+    - Vulpkanin # Box Change - Earlymerge Vulps
+    - Rodentia # Box Change - Adds Rodentia
 
 - type: loadoutEffectGroup
   id: EffectSpeciesVox
