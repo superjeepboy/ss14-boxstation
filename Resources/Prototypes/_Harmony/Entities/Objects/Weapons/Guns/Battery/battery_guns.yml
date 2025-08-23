@@ -125,7 +125,7 @@
 
 - type: entity
   name: energy magnum
-  parent: [BaseWeaponBatterySmall, BaseSecurityContraband]
+  parent: [BaseWeaponBatterySmall, BaseCommandContraband] # Box Change - BaseSecurityContraband > BaseCommandContraband
   id: WeaponEnergyMagnumHarmony
   description: A unique energy pistol given to the Head of Security of your station. It has three different firing modes that serve different purposes.
   components:
