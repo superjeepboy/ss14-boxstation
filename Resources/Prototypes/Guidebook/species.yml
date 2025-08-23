@@ -3,16 +3,16 @@
   name: guide-entry-species
   text: "/ServerInfo/Guidebook/Mobs/Species.xml"
   children:
-  - Arachnid
-  - Avali # harmony
-  - Diona
-  - Dwarf
-  - Human
-  - Moth
-  - Reptilian
-  - SlimePerson
-  - Vox
-  - Vulpkanin
+    - Arachnid
+    - Avali # harmony
+    - Diona
+    - Dwarf
+    - Human
+    - Moth
+    - Reptilian
+    - SlimePerson
+    - Vox
+    - Vulpkanin # Box Change - Earlymerge Vulps
 
 - type: guideEntry
   id: Arachnid
@@ -54,7 +54,9 @@
   name: species-name-vox
   text: "/ServerInfo/Guidebook/Mobs/Vox.xml"
 
+# Box Change Start - Early Merge Vulps
 - type: guideEntry
   id: Vulpkanin
   name: species-name-vulpkanin
   text: "/ServerInfo/Guidebook/Mobs/Vulpkanin.xml"
+# Box Change End
