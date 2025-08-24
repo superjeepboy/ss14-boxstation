@@ -36,13 +36,13 @@ public sealed partial class CCVars : CVars
     /// Set to true to disable parallel processing in the pow3r solver.
     /// </summary>
     public static readonly CVarDef<bool> DebugPow3rDisableParallel =
-        CVarDef.Create("debug.pow3r_disable_parallel", true, CVar.SERVERONLY);
+        CVarDef.Create("debug.pow3r_disable_parallel", false, CVar.SERVERONLY);
 
-// Harmony Change Start - Can this be in its owm file?
+    // Harmony Change Start - Can this be in its owm file?
     /// <summary>
     ///     Goobstation: The amount of time between NPC Silicons draining their battery in seconds.
     /// </summary>
     public static readonly CVarDef<float> SiliconNpcUpdateTime =
         CVarDef.Create("silicon.npcupdatetime", 1.5f, CVar.SERVERONLY);
-// Harmony Change End
+    // Harmony Change End
 }
