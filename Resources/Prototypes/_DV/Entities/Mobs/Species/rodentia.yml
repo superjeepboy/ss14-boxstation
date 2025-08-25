@@ -31,6 +31,7 @@
 - type: entity
   save: false
   name: Urist McRat
+  suffix: Box
   parent: BaseMobSpeciesOrganic
   id: BaseMobRodentia
   abstract: true
