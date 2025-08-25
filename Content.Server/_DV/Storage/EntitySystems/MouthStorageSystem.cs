@@ -13,6 +13,7 @@ using Content.Shared._DV.Storage.Components;
 using Content.Shared._DV.Storage.EntitySystems;
 using Content.Shared.Nutrition;
 using Content.Shared.Storage;
+using Content.Shared.Speech; // Box - Fixes stuff I think
 
 namespace Content.Server._DV.Storage.EntitySystems;
 

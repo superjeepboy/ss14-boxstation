@@ -16,12 +16,18 @@ using Content.Shared.Storage;
 using Content.Shared.Storage.EntitySystems;
 using Robust.Shared.Containers;
 using Robust.Shared.Map;
+// Box additions start
+using System.Numerics;
+using Content.Shared.Interaction;
+using Content.Shared.Stunnable;
+using Content.Shared.Throwing;
+using Robust.Shared.Physics.Components;
 
 namespace Content.Shared._DV.Storage.EntitySystems;
 
 public abstract class SharedMouthStorageSystem : EntitySystem
 {
-    [Dependency] private readonly DumpableSystem _dumpableSystem = default!;
+    // [Dependency] private readonly DumpableSystem _dumpableSystem = default!; // Box - Removed because broken
     [Dependency] private readonly SharedContainerSystem _containerSystem = default!;
     [Dependency] private readonly SharedActionsSystem _actionsSystem = default!;
 
@@ -30,7 +36,7 @@ public abstract class SharedMouthStorageSystem : EntitySystem
         base.Initialize();
 
         SubscribeLocalEvent<MouthStorageComponent, MapInitEvent>(OnMouthStorageInit);
-        SubscribeLocalEvent<MouthStorageComponent, DownedEvent>(DropAllContents);
+        SubscribeLocalEvent<MouthStorageComponent, KnockedDownEvent>(DropAllContents);
         SubscribeLocalEvent<MouthStorageComponent, DisarmedEvent>(DropAllContents);
         SubscribeLocalEvent<MouthStorageComponent, DamageChangedEvent>(OnDamageModified);
         SubscribeLocalEvent<MouthStorageComponent, ExaminedEvent>(OnExamined);
@@ -61,12 +67,12 @@ public abstract class SharedMouthStorageSystem : EntitySystem
             _actionsSystem.AddAction(uid, ref component.Action, component.OpenStorageAction, mouth);
     }
 
-    private void DropAllContents(EntityUid uid, MouthStorageComponent component, EntityEventArgs args)
+    private void DropAllContents<T>(EntityUid uid, MouthStorageComponent component, ref T _) // Box Change - Port fix from Starcup
     {
         if (component.MouthId == null)
             return;
 
-        _dumpableSystem.DumpContents(component.MouthId.Value, uid, uid);
+        // _dumpableSystem.DumpContents(component.MouthId.Value, uid, uid);
     }
 
     private void OnDamageModified(EntityUid uid, MouthStorageComponent component, DamageChangedEvent args)
@@ -76,7 +82,7 @@ public abstract class SharedMouthStorageSystem : EntitySystem
             || args.DamageDelta.GetTotal() < component.SpitDamageThreshold)
             return;
 
-        DropAllContents(uid, component, args);
+        DropAllContents(uid, component, ref args); // Box Change - Port Fix from Starcup
     }
 
     // Other people can see if this person has items in their mouth.

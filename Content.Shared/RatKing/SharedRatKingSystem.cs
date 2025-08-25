@@ -1,6 +1,6 @@
 using Content.Shared.Abilities; // Box Change - Port Funky/DV Rodentia
 using Content.Shared.Actions;
-﻿using Content.Shared.Actions.Components;
+using Content.Shared.Actions.Components;
 using Content.Shared.DoAfter;
 using Content.Shared.Random;
 using Content.Shared.Random.Helpers;
@@ -34,7 +34,7 @@ public abstract class SharedRatKingSystem : EntitySystem
 
         SubscribeLocalEvent<RatKingServantComponent, ComponentShutdown>(OnServantShutdown);
 
-        SubscribeLocalEvent<RatKingRummageableComponent, ComponentInit>(OnComponentInit); // Box Change - Port Funky/DV Rodentia - Goobstation
+        // SubscribeLocalEvent<RatKingRummageableComponent, ComponentInit>(OnComponentInit); // Box Change - Port Funky/DV Rodentia - Goobstation
         SubscribeLocalEvent<RatKingRummageableComponent, GetVerbsEvent<AlternativeVerb>>(OnGetVerb);
         SubscribeLocalEvent<RatKingRummageableComponent, RatKingRummageDoAfterEvent>(OnDoAfterComplete);
     }
