@@ -434,11 +434,13 @@ namespace Content.Server.Construction
                     if (ev is not EntRemovedFromContainerMessage entRemoved)
                         break;
 
-                    var toRemove = entRemoved.Entity;
+                    var container = entRemoved.Container;
+                    var removed = entRemoved.Entity;
 
-                    if (removeStep.EntityValid(toRemove, EntityManager, Factory)) // Does the removed entity have the desired tag?
-                        return HandleResult.True;
-                    return HandleResult.False;
+                    if (!removeStep.EntityValid(removed, container, EntityManager)) // Does the removed entity have the desired tag?
+                        return HandleResult.False;
+
+                    return validation ? HandleResult.Validated : HandleResult.True;
                 }
                 // End Box Change
 
