@@ -1,0 +1,6 @@
+# Dummy entity for loadout name
+- type: entity
+  parent: PlushieTeddyBearRecolorableRandom
+  id: PlushieTeddyBearRecolorableRandomLoadout
+  categories: [ HideSpawnMenu ]
+  name: teddy bear (random color)

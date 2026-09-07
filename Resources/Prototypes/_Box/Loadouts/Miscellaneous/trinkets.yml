@@ -245,6 +245,7 @@
 
 - type: loadout
   id: PlushieTeddyBearRecolorableRandom
+  dummyEntity: PlushieTeddyBearRecolorableRandomLoadout
   storage:
     back:
     - PlushieTeddyBearRecolorableRandom
