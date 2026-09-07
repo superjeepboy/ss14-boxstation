@@ -1,3 +1,4 @@
+using Content.Shared._Box.Construction.Steps; // Box Change: Imp floor lights
 using Content.Shared._Impstation.Construction.Steps; // Box Change: Imp floor lights
 using Robust.Shared.Serialization;
 using Robust.Shared.Serialization.Manager;
@@ -51,6 +52,10 @@ namespace Content.Shared.Construction.Steps
             if (node.Has("remove")) // imp
             {
                 return typeof(EntityRemoveConstructionGraphStep);
+            }
+            if (node.Has("lightAllTags") || node.Has("lightAnyTags"))
+            {
+                return typeof(ValidLightConstructionGraphStep);
             }
             // End Box Change
 
