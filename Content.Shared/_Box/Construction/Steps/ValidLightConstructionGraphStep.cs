@@ -28,9 +28,6 @@ namespace Content.Shared._Box.Construction.Steps
                 return false; // Step is somehow invalid, we return.
 
             entityManager.TryGetComponent<LightBulbComponent>(uid, out var bulb);
-            Logger.Warning("found bulb component? " + (bulb != null).ToString());
-            if (bulb != null)
-                Logger.Warning("bulb state: " + bulb.State.ToString());
             if (bulb == null || bulb.State != LightBulbState.Normal)
                 return false; // Not a bulb, or the bulb is broken or burned
 
