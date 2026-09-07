@@ -26,7 +26,13 @@
   - type: ItemSlots
     slots:
       ribbon:
-        name: ribbon
+        # Start Box Change: Change to verbs instead of a slot name, give it more fitting sounds
+        #name: ribbon
+        insertVerbText: teddy-insert-verb
+        ejectVerbText: teddy-eject-verb
+        insertSound: /Audio/Items/Medical/brutepack_end.ogg
+        ejectSound: /Audio/Items/Medical/brutepack_begin.ogg
+        # End Box Change
         startingItem: ClothingNeckTeddyRibbon
         whitelist:
           tags:
