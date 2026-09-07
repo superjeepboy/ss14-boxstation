@@ -245,16 +245,18 @@
             min: 1
             max: 2
 
-- type: entity
-  id: BaseBannerEngraveable
-  parent: BaseBanner
-  abstract: true
-  components:
-  - type: Engraveable
+# Start Box Change: No engraving
+# - type: entity
+  # id: BaseBannerEngraveable
+  # parent: BaseBanner
+  # abstract: true
+  # components:
+  # - type: Engraveable
+# End Box Change
 
 - type: entity
   id: WallpaperBannerBlackRed
-  parent: BaseBannerEngraveable
+  parent: BaseBanner # Box Change: No engraving
   name: black and red banner
   description: This shade of red doesn't scare you at all.
   components:
@@ -266,7 +268,7 @@
 
 - type: entity
   id: WallpaperBannerBlueWhite
-  parent: BaseBannerEngraveable
+  parent: BaseBanner # Box Change: No engraving
   name: blue and white banner
   description: All-purpose triangles of paper for any occasion.
   components:
@@ -278,7 +280,7 @@
 
 - type: entity
   id: WallpaperBannerColorful
-  parent: BaseBannerEngraveable
+  parent: BaseBanner # Box Change: No engraving
   name: colorful banner
   description: Don't be fooled, the paper on these tastes like shit.
   components:
@@ -290,7 +292,7 @@
 
 - type: entity
   id: WallpaperBannerRainbow
-  parent: BaseBannerEngraveable
+  parent: BaseBanner # Box Change: No engraving
   name: rainbow banner
   description: All your favorite colors are here.
   components:
@@ -302,7 +304,7 @@
 
 - type: entity
   id: WallpaperBannerSka
-  parent: BaseBannerEngraveable
+  parent: BaseBanner # Box Change: No engraving
   name: black and white banner
   description: None of your favorite colors are here.
   components:
