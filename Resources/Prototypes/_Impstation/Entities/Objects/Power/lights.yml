@@ -38,8 +38,10 @@
     intensitySlope: 3
     totalIntensity: 300
     canCreateVacuum: true
-  - type: Contraband
-    severity: TierXContraband
+  # Start Box Change: What
+  #- type: Contraband
+  #  severity: TierXContraband
+  # End Box Change
   - type: Destructible
     thresholds:
     - trigger:

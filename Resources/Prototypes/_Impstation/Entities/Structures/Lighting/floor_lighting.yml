@@ -1069,8 +1069,10 @@
       types:
         Heat: 1500 #dont map this
     popupText: powered-light-component-burn-hand
-  - type: Contraband
-    severity: TierXContraband
+  # Start Box Change: What
+  #- type: Contraband
+  #  severity: TierXContraband
+  # End Box Change
   - type: Destructible
     thresholds:
     - trigger:
