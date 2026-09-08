@@ -607,11 +607,6 @@
   - type: AtmosPipeLayers
     spriteRsiPaths: {}
     numberOfPipeLayers: 1
-    alternativePrototypes: #imp edit
-      Primary: HeatExchanger #imp edit
-      Secondary: HeatExchangerAlt1 #imp edit
-      Tertiary: HeatExchangerAlt2 #imp edit
-    #numberOfPipeLayers: 1 #imp edit, use all layers
   - type: SubFloorHide
     visibleLayers:
     - enum.SubfloorLayers.FirstLayer
@@ -637,10 +632,6 @@
   - type: GuideHelp
     guides:
     - Radiators
-  # imp edit start
-  - type: Tag
-    tags: [] # gets rid of unstackable, allowing radiators to be built on alt layers on the same tile
-  # imp edit end
 
 - type: entity
   parent: HeatExchanger
@@ -670,9 +661,3 @@
     - type: Construction
       graph: GasBinary
       node: bendradiator
-    # imp edit start
-    - type: AtmosPipeLayers
-      alternativePrototypes:
-        Primary: HeatExchangerBend #imp edit
-        Secondary: HeatExchangerBendAlt1 #imp edit
-        Tertiary: HeatExchangerBendAlt2 #imp edit
