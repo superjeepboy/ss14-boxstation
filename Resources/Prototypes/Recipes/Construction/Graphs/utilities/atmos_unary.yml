@@ -10,7 +10,7 @@
         amount: 2
         doAfter: 1
 
-    # imp edit start
+    # Start Box Change: imp - alt pipe layers
     - to: ventpumpAlt1
       steps:
       - material: Steel
@@ -22,7 +22,7 @@
       - material: Steel
         amount: 2
         doAfter: 1
-    # imp edit end
+    # End Box Change
 
     - to: passivevent
       steps:
@@ -30,7 +30,7 @@
         amount: 2
         doAfter: 1
 
-    # imp edit start
+    # Start Box Change: imp - alt pipe layers
     - to: passiveventAlt1
       steps:
       - material: Steel
@@ -42,7 +42,7 @@
       - material: Steel
         amount: 2
         doAfter: 1
-    # imp edit end
+    # End Box Change
 
     - to: ventscrubber
       steps:
@@ -50,7 +50,7 @@
         amount: 2
         doAfter: 1
 
-    # imp edit start
+    # Start Box Change: imp - alt pipe layers
     - to: ventscrubberAlt1
       steps:
       - material: Steel
@@ -62,7 +62,7 @@
       - material: Steel
         amount: 2
         doAfter: 1
-    # imp edit end
+    # End Box Change
 
     - to: outletinjector
       steps:
@@ -70,7 +70,7 @@
         amount: 2
         doAfter: 1
 
-    # imp edit start
+    # Start Box Change: imp - alt pipe layers
     - to: outletinjectorAlt1
       steps:
       - material: Steel
@@ -82,7 +82,7 @@
       - material: Steel
         amount: 2
         doAfter: 1
-    # imp edit end
+    # End Box Change
 
   - node: ventpump
     entity: GasVentPump
@@ -102,7 +102,7 @@
       - tool: Welding
         doAfter: 1
 
-  # imp edit start
+  # Start Box Change: imp - alt pipe layers
   - node: ventpumpAlt1
     entity: GasVentPumpAlt1
     edges:
@@ -138,7 +138,7 @@
         doAfter: 1
       - tool: Welding
         doAfter: 1
-  # imp edit end
+  # End Box Change
 
   - node: passivevent
     entity: GasPassiveVent
@@ -158,7 +158,7 @@
       - tool: Welding
         doAfter: 1
 
-  # imp edit start
+  # Start Box Change: imp - alt pipe layers
   - node: passiveventAlt1
     entity: GasPassiveVentAlt1
     edges:
@@ -194,7 +194,7 @@
         doAfter: 1
       - tool: Welding
         doAfter: 1
-  # imp edit start
+  # Start Box Change: imp - alt pipe layers
 
   - node: ventscrubber
     entity: GasVentScrubber
@@ -214,7 +214,7 @@
       - tool: Welding
         doAfter: 1
 
-  # imp edit start
+  # Start Box Change: imp - alt pipe layers
   - node: ventscrubberAlt1
     entity: GasVentScrubberAlt1
     edges:
@@ -250,7 +250,7 @@
         doAfter: 1
       - tool: Welding
         doAfter: 1
-    # imp edit end
+    # End Box Change
 
   - node: outletinjector
     entity: GasOutletInjector
@@ -268,7 +268,7 @@
       - tool: Welding
         doAfter: 1
 
-  # imp edit start
+  # Start Box Change: imp - alt pipe layers
   - node: outletinjectorAlt1
     entity: GasOutletInjectorAlt1
     edges:
@@ -300,4 +300,4 @@
       steps:
       - tool: Welding
         doAfter: 1
-  # imp edit end
+  # End Box Change
