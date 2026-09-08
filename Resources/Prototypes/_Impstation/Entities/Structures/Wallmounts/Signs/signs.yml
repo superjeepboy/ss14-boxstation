@@ -5,4 +5,5 @@
   description: WARNING! Water vapor flow tube. Ensure the flow is disengaged before working.
   components:
   - type: Sprite
+    sprite: _Impstation/Structures/Wallmounts/signs.rsi # Box Change: Move sprite to imp namespace
     state: atmos_h2o
