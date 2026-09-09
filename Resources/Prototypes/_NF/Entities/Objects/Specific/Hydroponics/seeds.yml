@@ -38,6 +38,11 @@
       damage:
         types:
           Blunt: 3
+    # Start Box Change: Increase price to fix arbitrage testfail
+    # Setting the price of the bee didn't work so we're doing this instead
+    - type: StaticPrice
+      price: 55
+    # End Box Change
 
 - type: seed
   id: bees
