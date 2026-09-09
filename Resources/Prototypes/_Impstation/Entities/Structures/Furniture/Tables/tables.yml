@@ -50,3 +50,7 @@
   - type: Construction
     graph: Table
     node: TableUraniumGlass
+  # Start Box Change: Prevent them from tiling with plasma glass tables (plasma and regular glass don't)
+  - type: IconSmooth
+    key: uraniumglasstable
+  # End Box Change
