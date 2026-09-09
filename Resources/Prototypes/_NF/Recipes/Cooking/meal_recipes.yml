@@ -7,8 +7,10 @@
     FoodBreadBun: 1
   reagents:
     Honey: 5
-  recipeType:
-  - Oven
+  # Start Box Change: Remove Frontier recipeType field
+  #recipeType:
+  #- Oven
+  # End Box Change
 
 - type: microwaveMealRecipe
   id: RecipeHoneyChallah
@@ -20,8 +22,10 @@
     PoppySeeds: 1
   reagents:
     Honey: 10
-  recipeType:
-  - Oven
+  # Start Box Change: Remove Frontier recipeType field
+  #recipeType:
+  #- Oven
+  # End Box Change
 
 - type: microwaveMealRecipe
   id: RecipeGlazedHam
@@ -33,8 +37,10 @@
   reagents:
     Honey: 10
     TableSalt: 5
-  recipeType:
-  - Oven
+  # Start Box Change: Remove Frontier recipeType field
+  #recipeType:
+  #- Oven
+  # End Box Change
 
 - type: microwaveMealRecipe
   id: RecipeAppleHoneyDutchBaby
@@ -48,8 +54,10 @@
   reagents:
     Honey: 10
     Oats: 10
-  recipeType:
-  - Oven
+  # Start Box Change: Remove Frontier recipeType field
+  #recipeType:
+  #- Oven
+  # End Box Change
 
 - type: microwaveMealRecipe
   id: RecipeAppleStrudelBite
@@ -62,5 +70,7 @@
     FoodButterSlice: 1
   reagents:
     Honey: 5
-  recipeType:
-  - Oven
+  # Start Box Change: Remove Frontier recipeType field
+  #recipeType:
+  #- Oven
+  # End Box Change
