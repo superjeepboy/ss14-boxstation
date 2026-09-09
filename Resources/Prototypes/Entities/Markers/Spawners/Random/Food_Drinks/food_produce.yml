@@ -142,21 +142,9 @@
       - id: FoodCherry
         amount: !type:RangeNumberSelector
           range: 1, 5
-<<<<<<< HEAD
-=======
-      - id: FoodCoffee # Frontier
-        amount: !type:RangeNumberSelector # Frontier
-          range: 1, 5 # Frontier
-      - id: FoodAvocado # Frontier
-        amount: !type:RangeNumberSelector # Frontier
-          range: 1, 5 # Frontier
-      - id: FoodCucumber # Frontier
-        amount: !type:RangeNumberSelector # Frontier
-          range: 1, 5 # Frontier
       - id: FoodHoneyComb # Frontier
         amount: !type:RangeNumberSelector # Frontier
           range: 1, 5 # Frontier
->>>>>>> 0eee6c2b72e (Honey (#2282))
     #rare
     - !type:GroupSelector
       children:

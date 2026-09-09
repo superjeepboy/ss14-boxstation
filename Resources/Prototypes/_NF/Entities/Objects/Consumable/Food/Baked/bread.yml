@@ -22,8 +22,10 @@
           Quantity: 12
         - ReagentId: Vitamin
           Quantity: 8
-        - ReagentId: Flavorol
-          Quantity: 5
+        # Start Box Change: Kill flavorol
+        #- ReagentId: Flavorol
+        #  Quantity: 5
+        # End Box Change
 
 - type: entity
   name: challah slice
@@ -44,8 +46,10 @@
           Quantity: 2.4
         - ReagentId: Vitamin
           Quantity: 1.6
-        - ReagentId: Flavorol
-          Quantity: 1
+        # Start Box Change: Kill flavorol
+        #- ReagentId: Flavorol
+        #  Quantity: 1
+        #End Box Change
   - type: Sprite
     sprite: _NF/Objects/Consumable/Food/Baked/bread.rsi
     state: challahslice

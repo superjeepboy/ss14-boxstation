@@ -26,8 +26,10 @@
           Quantity: 12
         - ReagentId: Vitamin
           Quantity: 8
-        - ReagentId: Flavorol
-          Quantity: 4
+        # Start Box Change: Kill flavorol
+        #- ReagentId: Flavorol
+        #  Quantity: 4
+        # End Box Change
   - type: Tag
     tags:
     - Meat
@@ -52,8 +54,10 @@
           Quantity: 3
         - ReagentId: Vitamin
           Quantity: 2
-        - ReagentId: Flavorol
-          Quantity: 1
+        # Start Box Change: Kill flavorol
+        #- ReagentId: Flavorol
+        #  Quantity: 1
+        # End Box Change
   - type: Sprite
     sprite: _NF/Objects/Consumable/Food/meat.rsi
     layers:

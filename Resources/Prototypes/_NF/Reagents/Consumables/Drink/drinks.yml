@@ -7,7 +7,7 @@
   flavor: honey
   color: "#E79A3F"
   metabolisms:
-    Drink:
+    Digestion: # Box Change: nubdody fix Drink -> Digestion 
       effects:
       - !type:SatiateThirst
         factor: 0.6

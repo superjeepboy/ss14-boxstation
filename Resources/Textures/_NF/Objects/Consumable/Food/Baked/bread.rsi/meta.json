@@ -8,29 +8,6 @@
   },
   "states": [
     {
-        "name": "avocadotoast"
-    },
-    {
-        "name": "breakfastbagel"
-    },
-    {
-        "name": "breakfastbagelpoppy"
-    },
-    {
-        "name": "cucumbersandwich"
-    },
-    {
-        "name": "pearmuffin"
-    },
-    {
-      "name": "inhand-right",
-      "directions": 4
-    },
-    {
-      "name": "inhand-left",
-      "directions": 4
-    },
-    {
         "name": "challah"
     },
     {

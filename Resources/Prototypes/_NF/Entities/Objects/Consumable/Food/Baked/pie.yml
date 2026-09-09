@@ -1,25 +1,4 @@
 - type: entity
-  name: pear and cheese tart
-  parent: FoodPieBase
-  id: FoodTartPearCheese
-  description: The most sublime pair.
-  components:
-  - type: FlavorProfile
-    flavors:
-      - sweet
-      - cheesy
-      - pear
-  - type: Sprite
-    sprite: _NF/Objects/Consumable/Food/Baked/pie.rsi
-    layers:
-    - state: tin
-    - state: pearandcheese
-  - type: Tag
-    tags:
-    - Fruit
-    - Pie
-
-- type: entity
   name: honey apple streusel pie
   parent: FoodPieBase
   id: FoodPieAppleHoney
@@ -44,8 +23,10 @@
           Quantity: 6
         - ReagentId: Vitamin
           Quantity: 4
-        - ReagentId: Flavorol
-          Quantity: 3
+        # Start Box Change: Kill flavorol
+        #- ReagentId: Flavorol
+        #  Quantity: 3
+        # End Box Change
   - type: SliceableFood
     slice: FoodPieAppleHoneySlice
   - type: Tag
