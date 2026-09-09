@@ -12,8 +12,8 @@
         Piercing: 0.5
   - type: TimedDespawn
     lifetime: 15
-    # Start Box Change: Set price to zero to fix arbitrage testfail
-    - type: StaticPrice
-      price: 0
-    # End Box Change
+  # Start Box Change: Set price to zero to fix arbitrage testfail
+  - type: StaticPrice
+    price: 0
+  # End Box Change
 
