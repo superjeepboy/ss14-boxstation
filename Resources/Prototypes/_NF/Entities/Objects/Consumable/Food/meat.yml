@@ -33,6 +33,15 @@
   - type: Tag
     tags:
     - Meat
+  # Start Box Change: Make the ham shank a melee weapon :>
+  - type: MeleeWeapon
+    wideAnimationRotation: 90
+    damage:
+      types:
+        Blunt: 4
+    soundHit:
+      collection: desecration # splat
+  # End Box Change
 
 - type: entity
   name: honey glazed ham slice
