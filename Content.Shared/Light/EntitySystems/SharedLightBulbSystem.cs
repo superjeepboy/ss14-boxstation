@@ -87,6 +87,10 @@ public abstract class SharedLightBulbSystem : EntitySystem
         bulb.State = state;
         Dirty(uid, bulb);
         UpdateAppearance(uid, bulb);
+        // Start Box Change: imp floorlights
+        if (state != LightBulbState.Normal)
+            SetBrokenTags(uid);
+        // End Box Change
     }
 
     public void PlayBreakSound(EntityUid uid, LightBulbComponent? bulb = null, EntityUid? user = null)
