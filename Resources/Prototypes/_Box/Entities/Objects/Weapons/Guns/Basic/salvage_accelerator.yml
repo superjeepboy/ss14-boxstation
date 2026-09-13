@@ -75,14 +75,16 @@
   description: Fires a scattershot of low-damage kinetic bolts at short range.
   components:
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Shotguns/enforcer.rsi
+    sprite: _Box/Objects/Weapons/Guns/Kinetic/accelerator_shotgun.rsi
   - type: Item
-    sprite: Objects/Weapons/Guns/Shotguns/enforcer_inhands_64x.rsi
+    sprite: _Box/Objects/Weapons/Guns/Kinetic/accelerator_shotgun.rsi
     size: Large
     shape:
     - 0,0,2,1
   - type: Clothing
-    sprite: Objects/Weapons/Guns/Shotguns/enforcer.rsi
+    sprite: _Box/Objects/Weapons/Guns/Kinetic/accelerator_shotgun.rsi
+    slots:
+    - suitStorage
   - type: BasicEntityAmmoProvider
     proto: BulletKineticShotgun
   # - type: UpgradeableGunCost # Scattershot weapons currently cannot take modkits
